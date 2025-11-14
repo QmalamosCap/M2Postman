@@ -1,0 +1,605 @@
+{
+	"info": {
+		"_postman_id": "34339443-0f67adfd-5d00-4610-b32c-c9e0eea16119",
+		"name": "MS InvestmentFunds-micro",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get Positions",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"id": "fb03c482-d220-46aa-85d9-3119c3bf76bc",
+						"exec": [
+							"\r",
+							"\r",
+							""
+						],
+						"type": "text/javascript",
+						"packages": {},
+						"requests": {}
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"id": "3ed7dfa4-692b-49e9-a340-21cf5d7d395f",
+						"exec": [
+							""
+						],
+						"type": "text/javascript",
+						"packages": {},
+						"requests": {}
+					}
+				}
+			],
+			"id": "34339443-d219f926-9c41-4597-9110-e48ea58d3a2a",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "x-absis-profile-from-idsapi",
+						"value": "{{x-absis-profile-from-idsapi}}",
+						"type": "text"
+					},
+					{
+						"key": "x-absis-user-context",
+						"value": "{{x-absis-user-context}}",
+						"type": "text"
+					},
+					{
+						"key": "x-absis-architecture-context",
+						"value": "{{x-absis-architecture-context}}",
+						"type": "text"
+					},
+					{
+						"key": "HTTP-HEADER-ACTOR",
+						"value": "DEV_CHAMELEON",
+						"type": "text"
+					},
+					{
+						"key": "ACTOR_FROM_IDSAPI",
+						"value": "DEV_CHAMELEON",
+						"type": "text"
+					},
+					{
+						"key": "x-absis-client-cert",
+						"value": "{{x-absis-client-cert}}",
+						"type": "text"
+					},
+					{
+						"key": "x-absis-profile-from-idsapi",
+						"value": "{{x-absis-profile-from-idsapi}}",
+						"type": "text"
+					},
+					{
+						"key": "x-absis-customer-context",
+						"value": "{{x-absis-customer-context_loc}}",
+						"type": "text"
+					},
+					{
+						"key": "x-absis-request-id",
+						"value": "",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{FONDOS_TST}}/int/contractFunds/96300048200511/positions/request",
+					"host": [
+						"{{FONDOS_TST}}"
+					],
+					"path": [
+						"int",
+						"contractFunds",
+						"96300048200511",
+						"positions",
+						"request"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get ContractsFunds",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							"\r",
+							"\r",
+							""
+						],
+						"type": "text/javascript",
+						"id": "91763983-b234-4139-9682-02a666f225ee"
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript",
+						"id": "3e42ef5c-c02f-4126-a62b-ee087f8d9cd5"
+					}
+				}
+			],
+			"id": "34339443-4167d354-c502-49c7-82fe-6a96a0894116",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-absis-profile-from-idsapi",
+						"value": "{{x-absis-profile-from-idsapi}}",
+						"type": "text"
+					},
+					{
+						"key": "x-absis-user-context",
+						"value": "{{x-absis-user-context}}",
+						"type": "text"
+					},
+					{
+						"key": "x-absis-architecture-context",
+						"value": "{{x-absis-architecture-context}}",
+						"type": "text"
+					},
+					{
+						"key": "HTTP-HEADER-ACTOR",
+						"value": "ABSIS_GENERICO",
+						"type": "text"
+					},
+					{
+						"key": "x-absis-client-cert",
+						"value": "{{x-absis-client-cert}}",
+						"type": "default"
+					},
+					{
+						"key": "x-absis-profile-from-idsapi",
+						"value": "{{x-absis-profile-from-idsapi}}",
+						"type": "default"
+					},
+					{
+						"key": "x-absis-customer-context",
+						"value": "{{x-absis-customer-context_loc}}",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{investment_url}}/contractFunds/9630003109535/old?pageKey=0&pageSize=25",
+					"host": [
+						"{{investment_url}}"
+					],
+					"path": [
+						"contractFunds",
+						"9630003109535",
+						"old"
+					],
+					"query": [
+						{
+							"key": "pageKey",
+							"value": "0"
+						},
+						{
+							"key": "pageSize",
+							"value": "25"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Orders",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							"\r",
+							"\r",
+							""
+						],
+						"type": "text/javascript",
+						"id": "5493808d-9e31-413d-8e7b-e2bc69532da8"
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript",
+						"id": "fe2d8804-c54d-44e8-8dd4-d8211d123c56"
+					}
+				}
+			],
+			"id": "34339443-3d8c91a7-28b2-4ecd-b295-aa61257139e3",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-absis-profile-from-idsapi",
+						"value": "{{x-absis-profile-from-idsapi}}",
+						"type": "text"
+					},
+					{
+						"key": "x-absis-user-context",
+						"value": "{{x-absis-user-context}}",
+						"type": "text"
+					},
+					{
+						"key": "x-absis-architecture-context",
+						"value": "{{x-absis-architecture-context}}",
+						"type": "text"
+					},
+					{
+						"key": "HTTP-HEADER-ACTOR",
+						"value": "ABSIS_GENERICO",
+						"type": "text"
+					},
+					{
+						"key": "x-absis-client-cert",
+						"value": "{{x-absis-client-cert}}",
+						"type": "default"
+					},
+					{
+						"key": "x-absis-profile-from-idsapi",
+						"value": "{{x-absis-profile-from-idsapi}}",
+						"type": "default"
+					},
+					{
+						"key": "x-absis-customer-context",
+						"value": "{{x-absis-customer-context_loc}}",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{investment_url}}/contractFunds/9630004694771/orders?pageSize=10&pageKey=0&isin=XX0395794307",
+					"host": [
+						"{{investment_url}}"
+					],
+					"path": [
+						"contractFunds",
+						"9630004694771",
+						"orders"
+					],
+					"query": [
+						{
+							"key": "pageSize",
+							"value": "10"
+						},
+						{
+							"key": "pageKey",
+							"value": "0"
+						},
+						{
+							"key": "isin",
+							"value": "XX0395794307"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Transfer Validation Origin",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"id": "f97aaf1a-a664-4062-996a-a3c2bde0d281",
+						"exec": [
+							"\r",
+							"\r",
+							""
+						],
+						"type": "text/javascript",
+						"packages": {},
+						"requests": {}
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"id": "e85ec3ca-aa72-4e32-8676-4ce6d11d3920",
+						"exec": [
+							""
+						],
+						"type": "text/javascript",
+						"packages": {},
+						"requests": {}
+					}
+				}
+			],
+			"id": "34339443-f1e3996e-3d1e-417e-8aab-9673630e348e",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "x-absis-profile-from-idsapi",
+						"value": "{{x-absis-profile-from-idsapi}}",
+						"type": "text"
+					},
+					{
+						"key": "x-absis-user-context",
+						"value": "{{x-absis-user-context}}",
+						"type": "text"
+					},
+					{
+						"key": "x-absis-architecture-context",
+						"value": "{{x-absis-architecture-context}}",
+						"type": "text"
+					},
+					{
+						"key": "HTTP-HEADER-ACTOR",
+						"value": "ABSIS_GENERICO",
+						"type": "text"
+					},
+					{
+						"key": "x-absis-client-cert",
+						"value": "{{x-absis-client-cert}}",
+						"type": "default"
+					},
+					{
+						"key": "x-absis-profile-from-idsapi",
+						"value": "{{x-absis-profile-from-idsapi}}",
+						"type": "default"
+					},
+					{
+						"key": "x-absis-customer-context",
+						"value": "{{x-absis-customer-context_loc}}",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"applicationTO\": \"{\\\"documentType\\\":\\\"FUNDS_TRANSFER\\\", \\\"transferFundsId\\\": \\\"000001\\\"}\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{investment_url}}int/investmentFunds/11111/signatures/id/validation",
+					"host": [
+						"{{investment_url}}int"
+					],
+					"path": [
+						"investmentFunds",
+						"11111",
+						"signatures",
+						"id",
+						"validation"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Transfer Validation Destination",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							"\r",
+							"\r",
+							""
+						],
+						"type": "text/javascript",
+						"id": "ce986237-7694-468a-bd8d-621130aad4a6"
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript",
+						"id": "79c00d90-9457-4418-b976-f0a68bd1f47c"
+					}
+				}
+			],
+			"id": "34339443-0ba13619-4953-463a-8705-2e17a8a29b0b",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "x-absis-profile-from-idsapi",
+						"value": "{{x-absis-profile-from-idsapi}}",
+						"type": "text"
+					},
+					{
+						"key": "x-absis-user-context",
+						"value": "{{x-absis-user-context}}",
+						"type": "text"
+					},
+					{
+						"key": "x-absis-architecture-context",
+						"value": "{{x-absis-architecture-context}}",
+						"type": "text"
+					},
+					{
+						"key": "HTTP-HEADER-ACTOR",
+						"value": "ABSIS_GENERICO",
+						"type": "text"
+					},
+					{
+						"key": "x-absis-client-cert",
+						"value": "{{x-absis-client-cert}}",
+						"type": "default"
+					},
+					{
+						"key": "x-absis-profile-from-idsapi",
+						"value": "{{x-absis-profile-from-idsapi}}",
+						"type": "default"
+					},
+					{
+						"key": "x-absis-customer-context",
+						"value": "{{x-absis-customer-context_loc}}",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"originContractFundId\": \"9630004694771\",\r\n  \"validationType\":\"TRANSFER\",\r\n  \"transferOrderType\": \"SPECIAL\",\r\n  \"employeedId\":\"U0112233\",\r\n  \"channel\":\"1234\",\r\n  \"requestType\": \"VALIDATION\",\r\n  \"DestinationRecordsList\": [\r\n    {\r\n      \"destinationContractFundId\": \"9630007747467\"\r\n    }\r\n  ],\r\n  \"distributionType\": \"SHARES\",\r\n  \"DestinationIsinsList\": [\r\n    {\r\n      \"isin\": \"LU1677195031\"\r\n    }\r\n  ]\r\n} ",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{investment_url}}/contractFunds/transfer_old",
+					"host": [
+						"{{investment_url}}"
+					],
+					"path": [
+						"contractFunds",
+						"transfer_old"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Transfer Validation Register",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							"\r",
+							"\r",
+							""
+						],
+						"type": "text/javascript",
+						"id": "ad89c540-920c-4f5c-8e81-f9985b2edf0a"
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript",
+						"id": "5f6e8798-02dc-4aac-b0f2-6eb7989eed53"
+					}
+				}
+			],
+			"id": "34339443-e971ea2f-16cb-4ebc-b154-600dbd9a32a6",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "x-absis-profile-from-idsapi",
+						"value": "{{x-absis-profile-from-idsapi}}",
+						"type": "text"
+					},
+					{
+						"key": "x-absis-user-context",
+						"value": "{{x-absis-user-context}}",
+						"type": "text"
+					},
+					{
+						"key": "x-absis-architecture-context",
+						"value": "{{x-absis-architecture-context}}",
+						"type": "text"
+					},
+					{
+						"key": "HTTP-HEADER-ACTOR",
+						"value": "ABSIS_GENERICO",
+						"type": "text"
+					},
+					{
+						"key": "x-absis-client-cert",
+						"value": "{{x-absis-client-cert}}",
+						"type": "default"
+					},
+					{
+						"key": "x-absis-profile-from-idsapi",
+						"value": "{{x-absis-profile-from-idsapi}}",
+						"type": "default"
+					},
+					{
+						"key": "x-absis-customer-context",
+						"value": "{{x-absis-customer-context_loc}}",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"originContractFundId\": \"9630002722744\",\r\n  \"validationType\":\"TRANSFER\",\r\n  \"transferOrderType\": \"SPECIAL\",\r\n  \"employeedId\":\"U0112233\",\r\n  \"channel\":\"1234\",\r\n  \"requestType\": \"REGISTER\",\r\n  \"DestinationRecordsList\": [\r\n    {\r\n      \"destinationContractFundId\": \"9630000262581\"\r\n    }\r\n  ],\r\n  \"distributionType\": \"SHARES\",\r\n  \"DestinationIsinsList\": [\r\n    {\r\n      \"isin\": \"ES0164540009\"\r\n    }\r\n  ]\r\n} ",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{investment_url}}/contractFunds/transfer_old",
+					"host": [
+						"{{investment_url}}"
+					],
+					"path": [
+						"contractFunds",
+						"transfer_old"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
