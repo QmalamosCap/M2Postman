@@ -149,7 +149,43 @@
 			},
 			"request": {
 				"method": "GET",
-				"header": [],
+				"header": [
+					{
+						"key": "x-absis-profile-from-idsapi",
+						"value": "{{x-absis-profile-from-idsapi}}",
+						"type": "text"
+					},
+					{
+						"key": "x-absis-user-context",
+						"value": "{{x-absis-user-context}}",
+						"type": "text"
+					},
+					{
+						"key": "x-absis-architecture-context",
+						"value": "{{x-absis-architecture-context}}",
+						"type": "text"
+					},
+					{
+						"key": "HTTP-HEADER-ACTOR",
+						"value": "ABSIS_GENERICO",
+						"type": "text"
+					},
+					{
+						"key": "x-absis-client-cert",
+						"value": "{{x-absis-client-cert}}",
+						"type": "text"
+					},
+					{
+						"key": "x-absis-profile-from-idsapi",
+						"value": "{{x-absis-profile-from-idsapi}}",
+						"type": "text"
+					},
+					{
+						"key": "x-absis-customer-context",
+						"value": "{{x-absis-customer-context_loc}}",
+						"type": "text"
+					}
+				],
 				"body": {
 					"mode": "raw",
 					"raw": "{\r\n}",
