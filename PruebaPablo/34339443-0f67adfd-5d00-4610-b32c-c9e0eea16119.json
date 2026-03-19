@@ -119,23 +119,27 @@
 				{
 					"listen": "prerequest",
 					"script": {
+						"id": "91763983-b234-4139-9682-02a666f225ee",
 						"exec": [
 							"\r",
 							"\r",
 							""
 						],
 						"type": "text/javascript",
-						"id": "91763983-b234-4139-9682-02a666f225ee"
+						"packages": {},
+						"requests": {}
 					}
 				},
 				{
 					"listen": "test",
 					"script": {
+						"id": "3e42ef5c-c02f-4126-a62b-ee087f8d9cd5",
 						"exec": [
 							""
 						],
 						"type": "text/javascript",
-						"id": "3e42ef5c-c02f-4126-a62b-ee087f8d9cd5"
+						"packages": {},
+						"requests": {}
 					}
 				}
 			],
@@ -145,43 +149,7 @@
 			},
 			"request": {
 				"method": "GET",
-				"header": [
-					{
-						"key": "x-absis-profile-from-idsapi",
-						"value": "{{x-absis-profile-from-idsapi}}",
-						"type": "text"
-					},
-					{
-						"key": "x-absis-user-context",
-						"value": "{{x-absis-user-context}}",
-						"type": "text"
-					},
-					{
-						"key": "x-absis-architecture-context",
-						"value": "{{x-absis-architecture-context}}",
-						"type": "text"
-					},
-					{
-						"key": "HTTP-HEADER-ACTOR",
-						"value": "ABSIS_GENERICO",
-						"type": "text"
-					},
-					{
-						"key": "x-absis-client-cert",
-						"value": "{{x-absis-client-cert}}",
-						"type": "default"
-					},
-					{
-						"key": "x-absis-profile-from-idsapi",
-						"value": "{{x-absis-profile-from-idsapi}}",
-						"type": "default"
-					},
-					{
-						"key": "x-absis-customer-context",
-						"value": "{{x-absis-customer-context_loc}}",
-						"type": "default"
-					}
-				],
+				"header": [],
 				"body": {
 					"mode": "raw",
 					"raw": "{\r\n}",
